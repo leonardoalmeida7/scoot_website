@@ -11,10 +11,7 @@
   --font-mono: "Space Mono", monospace;
 }
 
-body {
-  color: var(--color-dark-navy);
-  background: var(--color-snow);
-  font-family: var(--font-mono);
+html, body {
   overflow-x: hidden;
 }
 

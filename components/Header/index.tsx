@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import { Sidebar } from "@/components/Sidebars";
 
@@ -9,10 +9,19 @@ import { TopBars } from "../TopBars";
 
 export function Header() {
   const [isOpenSidebar, setIsOpenSidebar] = useState(false);
-    // Bloqueia rolagem lateral quando o sidebar está aberto
-    if (typeof window !== "undefined") {
-      document.body.style.overflowY = isOpenSidebar ? "hidden" : "auto";
-    }
+
+  // Bloqueia apenas a rolagem vertical quando o sidebar está aberto
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+
+    document.body.style.overflowY = isOpenSidebar ? "hidden" : "";
+    document.documentElement.style.overflowY = isOpenSidebar ? "hidden" : "";
+
+    return () => {
+      document.body.style.overflowY = "";
+      document.documentElement.style.overflowY = "";
+    };
+  }, [isOpenSidebar]);
 
   const toggleSidebar = () => {
     setIsOpenSidebar(!isOpenSidebar);
