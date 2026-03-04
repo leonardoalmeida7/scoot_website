@@ -9,7 +9,7 @@ export default function Home() {
       <Header />
       <Container />
       <footer className="bg-dim-grey text-center">
-        <div className="bg-[url('/patterns/semi-circles.svg')] bg-bottom-right bg-no-repeat py-12 mt-20">
+        <div className="bg-bottom-right bg-no-repeat py-12 mt-20" style={{backgroundImage: "url('/patterns/semi-circles.svg')"}}>
           <h3 className="text-snow font-bold text-3xl">
             Sign up and Scoot off today
           </h3>
