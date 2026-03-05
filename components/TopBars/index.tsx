@@ -1,3 +1,4 @@
+import Link from "next/dist/client/link";
 import { FaBars } from "react-icons/fa";
 import { IoIosClose } from "react-icons/io";
 
@@ -22,7 +23,7 @@ export function TopBars({ isOpenSidebar, toggleSidebar }: TopBarsProps) {
           />
         )}
         <h1 className="font-bold text-3xl text-center text-dark-navy translate-x-1/2">
-          scoot
+          <Link href="/">scoot</Link>
         </h1>
       </div>
     </div>

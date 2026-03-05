@@ -1,12 +1,11 @@
 import { ButtonDefault } from "@/ui/buttonDefault";
 
-interface HeroProps {
-    isOpenSidebar?: boolean;
-}
-
-export function Hero({isOpenSidebar}: HeroProps) {
+export function MainHero() {
   return (
-    <div className={`h-[90dvh] flex flex-col items-center justify-center text-center  bg-cover bg-center bg-no-repeat ${isOpenSidebar && "brightness-25 z-0"} transition duration-400 relative`} style={{ backgroundImage: "url('/images/home-hero-mobile.jpg')" }}>
+    <div
+      className={`h-[90dvh] flex flex-col items-center justify-center text-center  bg-cover bg-center bg-no-repeat transition duration-400 relative`}
+      style={{ backgroundImage: "url('/images/home-hero-mobile.jpg')" }}
+    >
       <div className="w-[75%]">
         <h1 className="text-4xl font-bold text-snow">
           Scooter sharing made simple
@@ -23,7 +22,6 @@ export function Hero({isOpenSidebar}: HeroProps) {
         alt="arrow pointing right"
         className="absolute -left-[62%] bottom-8"
       />
-
     </div>
   );
 }

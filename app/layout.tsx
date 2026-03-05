@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Lexend_Deca, Space_Mono } from "next/font/google";
 import "./globals.css";
+import { Nav } from "@/components/Nav";
+import { Footer } from "@/components/Footer";
 
 const lexendDeca = Lexend_Deca({
   variable: "--font-sans",
@@ -26,9 +28,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
+        suppressHydrationWarning
         className={`${lexendDeca.variable} ${spaceMono.variable} antialiased  overflow-x-hidden`}
       >
+        <Nav />
         {children}
+        <Footer />
       </body>
     </html>
   );

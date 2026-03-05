@@ -36,7 +36,6 @@ export function FeatureStep({
       <h2 className="font-bold text-3xl text-center">{title}</h2>
       <p className="text-dim-grey">
         {description}
-        app.
       </p>
       <ButtonDefault>Learn More</ButtonDefault>
     </div>
