@@ -6,7 +6,8 @@ interface FeatureStepProps {
   description: string;
   imageSrc: string;
   position?: string;
-  invert?: boolean;
+  invertX?: boolean;
+  invertY?: boolean;
 }
 
 export function FeatureStep({
@@ -14,7 +15,8 @@ export function FeatureStep({
   description,
   imageSrc,
   position,
-  invert,
+  invertX,
+  invertY,
 }: FeatureStepProps) {
   return (
     <div className="flex flex-col gap-7 items-center text-center relative max-w-85 mx-auto">
@@ -29,7 +31,7 @@ export function FeatureStep({
       <Image
         src="/patterns/right-arrow.svg"
         alt="left downward arrow"
-        className={`absolute  ${position} max-w-110 ${invert ? "scale-x-[-1]" : ""}`}
+        className={`absolute  ${position} max-w-110 ${invertX ? "scale-x-[-1]" : ""} ${invertY ? "scale-y-[-1]" : ""}`}
         width={500}
         height={200}
       />

@@ -1,14 +1,12 @@
-"use client";
-
 import { HowItWorksStep } from "../HowItWorksStep";
-import { useFetchData } from "@/hooks/useFetchData";
+import home from "@/content/home.json";
 
 export function HowItWorksSection() {
-  const data = useFetchData();
+  const { howItWorks } = home.features;
 
   return (
-    <section className="container flex flex-col gap-12 mx-auto mt-30 mb-20">
-      {data && data?.home?.features?.howItWorks?.map((step, index) => (
+    <section className="flex flex-col gap-12 mx-auto mt-30 mb-20">
+      {howItWorks?.map((step, index) => (
         <HowItWorksStep
           key={index}
           iconSrc={step.icon}

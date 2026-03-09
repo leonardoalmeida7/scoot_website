@@ -3,6 +3,8 @@ import { Lexend_Deca, Space_Mono } from "next/font/google";
 import "./globals.css";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
+import { Container } from "@/components/Container";
+import { MainHero } from "@/components/MainHero";
 
 const lexendDeca = Lexend_Deca({
   variable: "--font-sans",

@@ -1,21 +1,29 @@
-"use client";
-
 import { FeatureStep } from "../FeatureStep";
-import { useFetchData } from "@/hooks/useFetchData";
 
-export function FeaturesSection() {
-  const data = useFetchData();
+interface FeaturesSectionProps {
+  featureStep: {
+    title: string;
+    description: string;
+    image: string;
+    position: string;
+    invertX?: boolean;
+    invertY?: boolean;
+  }[];
+}
+
+export function FeaturesSection({ featureStep }: FeaturesSectionProps) {
 
   return (
     <section className="flex flex-col gap-16">
-      {data?.home?.features?.featureStep?.map((feature, index) => (
+      {featureStep?.map(({title, description, image, position, invertX, invertY}, index) => (
         <FeatureStep
           key={index}
-          title={feature.title}
-          description={feature.description}
-          imageSrc={feature.image.mobile}
-          position={feature.position}
-          invert={feature.invert}
+          title={title}
+          description={description}
+          imageSrc={image}
+          position={position}
+          invertX={invertX}
+          invertY={invertY}
         />
       ))}
     </section>
