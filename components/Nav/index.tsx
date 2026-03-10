@@ -28,7 +28,7 @@ export function Nav() {
   return (
     <div>
       <TopBars isOpenSidebar={isOpenSidebar} toggleSidebar={toggleSidebar} />
-      <Sidebar isOpen={isOpenSidebar} />
+      <Sidebar isOpen={isOpenSidebar} setIsOpen={setIsOpenSidebar} />
     </div>
   );
 }

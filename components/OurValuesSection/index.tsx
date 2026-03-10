@@ -4,12 +4,13 @@ interface OurValuesSectionProps {
     description: string;
     image: string;
   }[];
+  title: string;
 }
 
-export function OurValuesSection({ ourValues }: OurValuesSectionProps) {
+export function OurValuesSection({ ourValues, title }: OurValuesSectionProps) {
   return (
     <section className="my-20">
-      <h2 className="text-3xl font-bold text-center mt-16 mb-8">Our Values</h2>
+      <h2 className="text-3xl font-bold text-center mt-16 mb-8">{title}</h2>
       <div className="flex flex-col gap-12 ">
         {ourValues.map(({ title, description, image }, index) => (
           <div

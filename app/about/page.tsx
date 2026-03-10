@@ -14,7 +14,7 @@ export default function About() {
       <ImageAndTitle imageUrl={about.image} title={about.title} />
       <Container>
         <FeaturesSection featureStep={features} />
-        <OurValuesSection ourValues={ourValues} />
+        <OurValuesSection ourValues={ourValues} title="Our Values" />
         <FAQsSection howItWorks={FAQs.howItWorks} safeDriving={FAQs.safeDriving} />
       </Container>
     </>

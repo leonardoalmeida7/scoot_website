@@ -8,6 +8,7 @@ interface FeatureStepProps {
   position?: string;
   invertX?: boolean;
   invertY?: boolean;
+  buttonText?: string;
 }
 
 export function FeatureStep({
@@ -17,6 +18,7 @@ export function FeatureStep({
   position,
   invertX,
   invertY,
+  buttonText,
 }: FeatureStepProps) {
   return (
     <div className="flex flex-col gap-7 items-center text-center relative max-w-85 mx-auto">
@@ -39,7 +41,7 @@ export function FeatureStep({
       <p className="text-dim-grey">
         {description}
       </p>
-      <ButtonDefault>Learn More</ButtonDefault>
+      {buttonText && <ButtonDefault>{buttonText}</ButtonDefault>}
     </div>
   );
 }

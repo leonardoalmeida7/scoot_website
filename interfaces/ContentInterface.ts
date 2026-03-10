@@ -19,6 +19,7 @@ export interface HomeInterface {
       description: string;
       image: string;
       position: string;
+      buttonText?: string;
       invertX: boolean;
       invertY: boolean;
     }>;
@@ -29,7 +30,6 @@ export interface HomeInterface {
 export interface AboutInterface {
   title: string;
   image: string;
-  description: string;
   features: Array<{
     title: string;
     description: string;
@@ -53,4 +53,27 @@ export interface AboutInterface {
       answer: string;
     }>;
   };
+}
+
+export interface CareersInterface {
+  title: string;
+  image: string;
+  buttonText?: string;
+  features: Array<{
+    title: string;
+    description: string;
+    image: string;
+    position: string;
+    invertX: boolean;
+    invertY: boolean;
+  }>;
+  whyJoinUs: Array<{
+    title: string;
+    description: string;
+    image: string;
+  }>;
+  jobs: Array<{
+    job: string;
+    location: string;
+  }>;
 }

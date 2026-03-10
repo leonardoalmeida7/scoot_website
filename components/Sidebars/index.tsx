@@ -3,9 +3,10 @@ import { NavLinksList } from "../NavLinksList";
 
 interface SidebarProps {
   isOpen: boolean;
+  setIsOpen: (value: boolean | ((prevState: boolean) => boolean)) => void;
 }
 
-export function Sidebar({ isOpen }: SidebarProps) {
+export function Sidebar({ isOpen, setIsOpen }: SidebarProps) {
   return (
     <>
       <div
@@ -14,7 +15,7 @@ export function Sidebar({ isOpen }: SidebarProps) {
         <NavLinksList itsHeader={true} />
         <ButtonDefault className="mb-10">Get Scooting</ButtonDefault>
       </div>
-      <div className={`bg-black/50 fixed top-0 left-0 w-full h-full z-5 ${isOpen ? "block" : "hidden"}`} />
+      <div className={`bg-black/50 fixed top-0 left-0 w-full h-full z-5 ${isOpen ? "block" : "hidden"}`} onClick={() => setIsOpen((prev) => !prev)} />
     </>
   );
 }

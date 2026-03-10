@@ -1,0 +1,58 @@
+{
+  "title": "Careers",
+  "image": "/images/careers-location-hero-mobile.jpg",
+  "features": [
+    {
+      "image": "/images/join-us.jpg",
+      "title": "Care to join our mission?",
+      "description": "We’re always looking for ambitious individuals to help us on our journey. If you’re passionate about our mission to provide clean, accessible transport to improve urban living we want to hear from you!",
+      "buttonText": "Say Hello",
+      "position": "-right-40 top-30",
+      "invertX": true,
+      "invertY": false
+    }
+  ],
+  "whyJoinUs": [
+    {
+      "image": "/images/our-tech.jpg",
+      "title": "Our Tech",
+      "description": "We’re using cutting edge technology to drive accessible urban transportation forward. Our fully electric scooters are a joy to ride!."
+    },
+    {
+      "image": "/images/our-integrity.jpg",
+      "title": "Our integrity",
+      "description": "We are fully committed to deliver a great yet safe, sustainable micro-mobility experience in every city we serve."
+    },
+    {
+      "image": "/images/our-community.jpg",
+      "title": "Our community",
+      "description": "We support every community we serve. All workers are paid a living wage based on their location and are Scoot employees."
+    }
+  ],
+  "jobs": [
+    {
+        "job": "Software Engineer",
+        "location": "Jakarta, Indonesia"
+    },
+    {
+        "job": "UI/UX Designer",
+        "location": "Yokohama, Japan"
+    },
+    {
+        "job": "Blog Content Copywriter",
+        "location": "New York, United States"
+    },
+    {
+        "job": "Graphic Designer",
+        "location": "New York, United States"
+    },
+    {
+        "job": "Fleet Supervisor",
+        "location": "Jakarta, Indonesia"
+    },
+    {
+        "job": "UX Analyst",
+        "location": "London, United Kingdom"
+    }
+  ]
+}

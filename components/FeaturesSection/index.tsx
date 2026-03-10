@@ -8,6 +8,7 @@ interface FeaturesSectionProps {
     position: string;
     invertX?: boolean;
     invertY?: boolean;
+    buttonText?: string;
   }[];
 }
 
@@ -15,7 +16,7 @@ export function FeaturesSection({ featureStep }: FeaturesSectionProps) {
 
   return (
     <section className="flex flex-col gap-16">
-      {featureStep?.map(({title, description, image, position, invertX, invertY}, index) => (
+      {featureStep?.map(({title, description, image, position, invertX, invertY, buttonText}, index) => (
         <FeatureStep
           key={index}
           title={title}
@@ -24,6 +25,7 @@ export function FeaturesSection({ featureStep }: FeaturesSectionProps) {
           position={position}
           invertX={invertX}
           invertY={invertY}
+          buttonText={buttonText}
         />
       ))}
     </section>

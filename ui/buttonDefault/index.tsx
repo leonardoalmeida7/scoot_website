@@ -11,7 +11,7 @@ export function ButtonDefault({
 }: ButtonProps) {
   return (
     <button
-      className={`bg-yellow hover:opacity-75 transition text-snow px-4 py-2 font-bold ${className} cursor-pointer`}
+      className={`bg-yellow hover:opacity-75 transition text-snow px-4 py-2 font-semibold ${className} cursor-pointer w-1/2 font-mono`}
       {...props}
     >
       {children}
