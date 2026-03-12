@@ -1,0 +1,22 @@
+{
+  "title": "Location",
+  "image": {
+    "desktop": "/images/careers-locations-hero-desktop.jpg",
+    "tablet": "/images/careers-locations-hero-tablet.jpg",
+    "mobile": "/images/careers-location-hero-mobile.jpg"
+  },
+  "geo": {
+    "mapImage": {
+      "desktop": "/images/world-map-desktop.png",
+      "tablet": "/images/world-map-tablet.png",
+      "mobile": "/images/world-map-mobile.png"
+    },
+    "cities": ["New York", "London", "Jakarta", "Yokohama"],
+    "position": {
+      "New York": { "top": "40px", "left": "100px" },
+      "London": { "top": "20px", "left": "35%" },
+      "Jakarta": {"top": "60px", "left": "77%" },
+      "Yokohama": { "top": "165px", "left": "70%" }
+    }
+  }
+}

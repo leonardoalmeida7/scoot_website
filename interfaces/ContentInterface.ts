@@ -77,3 +77,27 @@ export interface CareersInterface {
     location: string;
   }>;
 }
+
+
+export interface LocationInterface {
+  title: string;
+  image: {
+    desktop: string;
+    tablet: string;
+    mobile: string;
+  }
+  geo: {
+    mapImage: {
+      desktop: string;
+      tablet: string;
+      mobile: string;
+    };
+    cities: string[];
+    position: {
+      [city: string]: {
+        top: string;
+        left: string;
+      }
+    }
+  };
+}
